@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="document.getElementById('texto').innerText = 'Olá, Mundo!'">Clique para mudar o texto</button>
+    <p id="texto">Texto original</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar cor de fundo</title>
+</head>
+<body>
+
+    <button onclick="document.body.style.backgroundColor = 'blue'">Mudar cor de fundo</button>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+
+    <button onclick="document.getElementById('contador').innerText = parseInt(document.getElementById('contador').innerText) + 1">+</button>
+    <span id="contador">0</span>
+    <button onclick="document.getElementById('contador').innerText = parseInt(document.getElementById('contador').innerText) - 1">-</button>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar item na lista</title>
+</head>
+<body>
+
+    <input type="text" id="inputItem">
+    <button onclick="document.getElementById('lista').innerHTML += '<li>' + document.getElementById('inputItem').value + '</li>'">Adicionar</button>
+    <ul id="lista"></ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Imagem</title>
+</head>
+<body>
+
+    <button onclick="document.getElementById('imagem').style.display = (document.getElementById('imagem').style.display === 'none' ? 'block' : 'none')">Mostrar/Ocultar Imagem</button>
+    <img id="imagem" src="https://rounder.pics/assets/img/ui/square-image.webp" style="display:none">
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Imagem</title>
+</head>
+<body>
+
+    <button onclick="document.getElementById('imagem').src = document.getElementById('imagem').src.includes('150') ? 'https://cdn.pixabay.com/photo/2016/11/21/06/53/beautiful-natural-image-1844362_1280.jpg' : 'https://cdn.pixabay.com/photo/2016/11/21/06/53/beautiful-natural-image-1844362_1280.jpg'">Trocar Imagem</button>
+    <img id="imagem" src="https://rounder.pics/assets/img/ui/square-image.webp">
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+
+    <ul id="listaTarefas">
+        <li>Exemplo de tarefa <button onclick="this.parentElement.remove()">Remover</button></li>
+    </ul>
+
+</body>
+</html>
+
+
