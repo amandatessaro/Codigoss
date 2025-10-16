@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Pratica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #counter {
+      font-size: 24px;
+    }
+    #task-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #task-list li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Botao que muda o texto de um <p> para "Ola, Mundo!" -->
+  <p id="text">Texto original</p>
+  <button onclick="changeText()">Clique para mudar o texto</button>
+  <br><br>
+
+  <!-- 2. Botao que muda a cor de fundo da pagina -->
+  <button onclick="changeBackgroundColor()">Mudar cor de fundo</button>
+  <br><br>
+
+  <!-- 3. Botoes + e - para contador -->
+  <span id="counter">0</span>
+  <button onclick="increaseCounter()">+</button>
+  <button onclick="decreaseCounter()">-</button>
+  <br><br>
+
+  <!-- 4. Input e botao para adicionar item de lista -->
+  <input type="text" id="input-task" placeholder="Digite uma tarefa">
+  <button onclick="addTask()">Adicionar</button>
+  <ul id="task-list"></ul>
+  <br><br>
+
+  <!-- 5. Botao para alternar visibilidade de uma imagem -->
+  <button onclick="toggleImage()">Mostrar/Ocultar Imagem</button>
+  <br><br>
+  <img id="image" src="https://media.istockphoto.com/id/517188688/pt/foto/paisagem-de-montanha.jpg?s=612x612&w=0&k=20&c=uFGUrUT6gA8FrTWhE10YYzngWPlDLssKxJiDs1Qw2Qs=" alt="Imagem" style="display:none;">
+
+  <br><br>
+
+  <!-- 6. Botao para trocar imagem -->
+  <button onclick="changeImage()">Trocar Imagem</button>
+  <br><br>
+
+  <!-- 7. Lista de tarefas com botao de remover -->
+  <ul id="task-list-remove">
+    <li>
+      Tarefa 1 <button onclick="removeTask(this)">Remover</button>
+    </li>
+    <li>
+      Tarefa 2 <button onclick="removeTask(this)">Remover</button>
+    </li>
+  </ul>
+
+  <script>
+    // 1. Mudar o texto de um <p> para "Ola, Mundo!"
+    function changeText() {
+      document.getElementById("text").innerText = "Ola, Mundo!";
+    }
+
+    // 2. Mudar a cor de fundo da pagina para azul
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = "blue";
+    }
+
+    // 3. Contador com botoes de aumento e diminuicao
+    let counter = 0;
+    function increaseCounter() {
+      counter++;
+      document.getElementById("counter").innerText = counter;
+    }
+
+    function decreaseCounter() {
+      counter--;
+      document.getElementById("counter").innerText = counter;
+    }
+
+    // 4. Adicionar tarefa a lista
+    function addTask() {
+      const taskInput = document.getElementById("input-task");
+      if (taskInput.value.trim() !== "") {
+        const li = document.createElement("li");
+        li.innerText = taskInput.value;
+        const removeButton = document.createElement("button");
+        removeButton.innerText = "Remover";
+        removeButton.onclick = function() {
+          li.remove();
+        };
+        li.appendChild(removeButton);
+        document.getElementById("task-list").appendChild(li);
+        taskInput.value = ""; // Limpa o campo de entrada
+      }
+    }
+
+    // 5. Alternar entre mostrar e esconder imagem
+    function toggleImage() {
+      const image = document.getElementById("image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+
+    // 6. Trocar a imagem exibida
+    function changeImage() {
+      const image = document.getElementById("image");
+      image.src = "https://embratur.com.br/wp-content/uploads/2022/07/Embratur-Brasil-ultrapassa-marca-de-1-milhao-de-turistas-estrangeiros-recebidos-pela-primeira-vez-desde-2020-1.png"; // Nova imagem
+    }
+
+    // 7. Remover item da lista de tarefas
+    function removeTask(button) {
+      const li = button.parentElement;
+      li.remove();
+    }
+  </script>
+
+</body>
+</html>
