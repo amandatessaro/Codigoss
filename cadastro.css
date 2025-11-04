@@ -52,7 +52,7 @@
     width: 150px;
     background-color:  rgb(74, 184, 218);
     border-radius: 10px;
-    box-shadow: 5px 5px 5px white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .acessar{
