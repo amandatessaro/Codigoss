@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cadastro.css">
-
 </head>
 
 <body>
@@ -19,30 +18,36 @@
                 <br>
                 <h3 class="letra cor"> Acesse sua conta</h3>
                 <br>
-                <br>
                 <a href="Login.html">
-                <button class="botao letra tamanho"> Acessar </button>  
+                    <button class="botao letra tamanho"> Acessar </button>
                 </a>
             </div>
-            <div class="quadrado flex centro coluna">
+            <div class="quadrado flex centro coluna cor">
                 <h1 class="letra "> Criar sua conta </h1>
                 <br>
                 <br>
                 <div class="flex coluna ">
-                    <input type="text" placeholder=" Seu nome de usuárioo" class="acessar espaco" id="nome" >
-                    <br>
-                    <input type="text" placeholder=" Sua senha" class="acessar espaco" id="senha">
-                    <br>
-                    <input type="Password" placeholder=" Confirme sua senha" class="acessar espaco" id="confirmarSenha">
+                    <div class="input-group">
+                        <input type="email" placeholder=" " class="acessar espaco" name="email" required>
+                        <label>Seu email</label>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder=" " class="acessar espaco" name="senha" required>
+                        <label>Sua senha</label>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder=" " class="acessar espaco" name="confirmarSenha" required>
+                        <label>Confirme sua senha</label>
+                        <br>
+                    </div>
                 </div>
-                <br>
-                <br>
-                <br>
                 <br>
                 <button class="botaoo" role="button" onclick="cadastrar()"> Concluir Cadastro </button>
             </div>
-        
-  
+
+
         </div>
     </div>
     <script src="script.js"></script>
