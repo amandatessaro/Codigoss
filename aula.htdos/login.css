@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100vh;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.space{
+    justify-content: space-between;
+}
+
+.quadrado-login{
+    background-color: rgb(74, 184, 218);
+    height: 600px;
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray ;
+}
+
+.centro{
+    justify-content: center ;
+    align-items: center;
+}
+
+.quadrado-azul{
+    background-color: rgb(39, 119, 151);
+    height: 100%;
+    width: 30%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.quadrado{
+    background-color: rgb(74, 184, 218);
+    height: 100%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.coluna{
+    flex-direction: column;
+}
+
+.botao{
+    height: 40px;
+    width: 150px;
+    background-color:  rgb(74, 184, 218);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px white;
+}
+
+.acessar{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.botaoo{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(39, 119, 151);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+

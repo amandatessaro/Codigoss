@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+
+<body>
+    <div class="container flex centro fundo">
+        <div class="quadrado-login space flex ">
+            <div class="quadrado-azul centro flex coluna">
+                <h1 class="letra cor"> Seja bem-vinda! </h1>
+                <br>
+                <br>
+                <br>
+                <h3 class="letra cor"> Acesse sua conta</h3>
+                <br>
+                <br>
+                <a href="Login.html">
+                <button class="botao letra tamanho"> Acessar </button>  
+                </a>
+            </div>
+            <div class="quadrado flex centro coluna">
+                <h1 class="letra "> Criar sua conta </h1>
+                <br>
+                <br>
+                <div class="flex coluna ">
+                    <input type="text" placeholder=" Seu nome de usuárioo" class="acessar espaco" id="nome" >
+                    <br>
+                    <input type="text" placeholder=" Sua senha" class="acessar espaco" id="senha">
+                    <br>
+                    <input type="Password" placeholder=" Confirme sua senha" class="acessar espaco" id="confirmarSenha">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="botaoo" role="button" onclick="cadastrar()"> Concluir Cadastro </button>
+            </div>
+        
+  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
