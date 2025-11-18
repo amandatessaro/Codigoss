@@ -21,7 +21,7 @@
     overflow: hidden;
     height: 600px;
     width: 900px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 20px rgba(253, 253, 253, 0.25);
 }
 
 .centro{
@@ -30,14 +30,14 @@
 }
 
 .quadrado-azul{
-    background: #bfc2c7;;
+    background: #d8dbe0;;
     height: 100%;
-    width: 30%;
+    width: 35%;
     border-radius: 20px 0px 0px 20px;
 }
 
 .quadrado{
-     background: #b1d6e5;;
+     background: #9dc7d8;;
     height: 100%;
     width: 70%;
     border-radius: 0px 20px 20px 0px;
@@ -54,7 +54,7 @@
     border: none;
     background: white;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(163, 160, 160, 0.3);
     transition: 0.2s ease;
 }
 
@@ -72,12 +72,12 @@
     border: none;
     background: white;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(163, 160, 160, 0.3);
     transition: 0.2s ease;
 }
 
 .letra{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     text-align: center;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .fundo{
-    background-image: url('https://lh3.googleusercontent.com/rd-gg-dl/ABS2GSmGoje5avJzItM6q12vd9XjGP1TRnHJyUcxlkdJ3EIGbPZlWYoL_7-B5jbSCjz6iND7rncoln1MpoYWi1yoWo0s0ZtqqGrNhxYHZaXt_AptYUgeIB0s2uf45lUBCe8Ar3VI5sSOLUrzioMD0a9UcIDPqIBk3vXmUpoCMfoqzfqW7ksC76Ng0TEBtwQ1yoR4qoeN7H0uKXz-1NWqtqk_kd6Hd17_3VnU4v_gdp9qfY9crGzm-Zp0Nt9zA_qwZa4Ua64Ww5fwdn2unAbRuZa-IeSow6Y_O_uT7Luc_InZzCfznuchPiMFqc9di4YAplPzgy38Kg01NkMSvfvaA82B08oxIEKuf6ZVA-2pDLCT37Lvmt7QYuacWrSg3_yOS42aTT-4uNOJ_hJvYz0q6RApvEhB_Ww3gzSAdU72MnnyIJ6T1wFscMLLXgNsIi0YoFCc3QcZ6HZmGjTuMGQCaqKsgZyHMYeaUyqrFpPy2fvj6UWbPG_Y8YCNDGRwLenRKB4GzS7mtoot4VPEbRLxiljDCoggOu2R0Qh7I_07htM5EmChtjy4EpA0LT_sDZnq_vEwrSJ4sMlR-Lrtb9I7tSDqAEgvVOpHw4IaACSn7GQxirczEaTKIc7cOUC-6cgvJWKTTEuibx8ELjP-z66trQqWHy0lQZ7sh0RaZkCPQk1-4qAuKuWPvq7gwD1V8ZOMJkakYubdP2mAUhhzf6nGatsto9P7KmZILNxdnc8EvJLfvi9MEaLkNgl1WimEvYMq81h7lQ3b6VyOZIWHT-4iS6-VqCOCbC9gdDBQ7WRuHkzRsU29h6hLYy-uxidB9WZxBfsZMbp3fp2QkNiv-ZCFOYYMywm6KNdgRKj4Ie8cg2uyxNP0wlXO4VAM20ZWFADIDW-v8TqyhusI5FP8UZUlNw4OhlSvAL37epbd57IqQ5XLhVQX258V3H74_2MYsJWNyS1YF5hHgw3_6qWnnhD3ocT_p0qbtTW2eq2snEkBYBm7CFlD-hxogIdc4cUK7uNQUEch49IeoBESaYbnWNdcjE1O1RJrbyYwh61SHRb7vmGtHSOakywST9JI0e_7vte6HIKNMybc3cuoHyw7fkD4iuVhAj6joD0U37NfhBqvQ5-SPXz7TRdFzFNg1WktAfUj8pzMQcz4lkSLBa38a3CN4Yv7w4AR1KhAVEtP5aU=s1024-rj');
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-abstract-blue-watercolor-background-texture-vector-illustration-of-water-paint-on-image_13891656.png');
     background-size: 2000px;
     background-position: center;
     background-repeat: no-repeat;
