@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" linha linha-1">
+            <div class="quadrado-azul">
+                <div class="metade flex alinha-meio">
+                    <div class="quadrado-laranja"></div>
+                </div>
+                <div class="metade flex alinha-meio alinha-coluna-final">
+                    <div class="quadrado-laranja"></div>
+                </div>
+            </div>
+            <div class="quadrado-azul flex centro">
+                <div class="quadrado-laranja"></div>
+            </div>
+            <div class="quadrado-azul">
+                <div class="metade">
+                    <div class="quadrado-laranja"></div>
+                </div>
+                <div class="metade flex alinha-final alinha-coluna-final">
+                    <div class="quadrado-laranja"></div>
+                </div>
+            </div>
+            <div class="quadrado-azul">
+                <div class="metade flex alinha-coluna-center">
+                    <div class="quadrado-laranja"></div>
+                </div>
+            </div>
+       
+       
+        </div>
+    </div>
+</body>
+
+</html>
