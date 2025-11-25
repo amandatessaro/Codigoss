@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Livros - Desafio PHP</title>
+    <link rel="stylesheet" href="index.css"> </head>
+<body>
+    <div class="container">
+        
+        <div class="lado-esquerdo">
+            <h1> Lista de Livros</h1>
+            <p class="subtitulo">Obras cadastradas no sistema</p>
+            <a href="index.html" class="botao-destaque">Cadastrar Novo Livro</a>
+        </div>
+        
+        <div class="lado-direito">
+            <h1>Livros Cadastrados</h1>
+            
+            <form action="listar.html" method="GET" class="form-busca">
+                <input type="text" name="busca" class="campo-busca" placeholder="Buscar por título, autor ou categoria..." >
+                <button type="submit" class="botao-busca"> Buscar</button>
+            </form>
+            
+            <div class="tabela-livros">
+                <div class="linha-livro cabecalho-simulado">
+                    <div class="col-id">ID</div>
+                    <div class="col-titulo">Título</div>
+                    <div class="col-autor">Autor</div>
+                    <div class="col-categoria">Categoria</div>
+                    <div class="col-ano">Ano</div>
+                    <div class="col-qtd">Qtd</div>
+                </div>
+                
+                <div class="dados-container">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<?php 
+    // Garante que o PHP está pronto para receber mensagens de status
+    if (file_exists('conexao.php')) include 'conexao.php'; 
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros - Desafio PHP</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div class="container">
+        
+        <div class="lado-esquerdo">
+            <h1> Gerenciamento de Livros</h1>
+            <p class="subtitulo">Cadastro e Lista de Obras</p>
+            <a href="listar.php" class="botao-destaque">Ver Livros Cadastrados</a>
+        </div>
+        
+        <div class="lado-direito">
+            <h1>Cadastrar Novo Livro</h1>
+            
+            <form action="salvar_livro.php" method="POST" class="form-cadastro">
+                
+                <label for="titulo">Título:</label>
+                <select id="titulo" name="titulo" required class="campo-busca">
+                    <option value="">-- Selecione um Título --</option>
+                    <option value="O Senhor dos Anéis">O Senhor dos Anéis</option>
+                    <option value="Harry Potter e a Pedra Filosofal">Harry Potter e a Pedra Filosofal</option>
+                    <option value="Fundação">Fundação</option>
+                    <option value="Dom Casmurro">Dom Casmurro</option>
+                    <option value="O Hobbit">O Hobbit</option>
+                    <option value="Outro Título">Outro Título</option>
+                </select>
+
+                <label for="autor">Autor:</label>
+                <select id="autor" name="autor" required class="campo-busca">
+                    <option value="">-- Selecione um Autor --</option>
+                    <option value="J.R.R. Tolkien">J.R.R. Tolkien</option>
+                    <option value="J.K. Rowling">J.K. Rowling</option>
+                    <option value="George Orwell">George Orwell</option>
+                    <option option value="Isaac Asimov">Isaac Asimov</option>
+                    <option value="Machado de Assis">Machado de Assis</option>
+                    <option value="Outro_Autor">Outro Autor (Específico)</option>
+                </select>
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" class="campo-busca">
+                    <option value="">-- Selecione uma Categoria --</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Ficcao_Cientifica">Ficção Científica</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Tecnico">Técnico</option>
+                    <option value="Biografia">Biografia</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                
+                <label for="ano_publicacao">Ano de Publicação:</label>
+                <input type="number" id="ano_publicacao" name="ano_publicacao" class="campo-busca" placeholder="Ex: 1954" min="1000" max="2100">
+
+                <label for="quantidade">Quantidade em Estoque:</label>
+                <input type="number" id="quantidade" name="quantidade" required class="campo-busca" value="1" min="1">
+                
+                <div class="campo-full-width">
+                    <button type="submit" class="botao-salvar">
+                        Salvar Livro
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
