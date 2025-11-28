@@ -1,0 +1,116 @@
+:root {
+    --primaria: #2C73D2;      /* Azul biblioteca */
+    --secundaria: #26A69A;    /* Verde suave */
+    --fundo: #F5F5F5;         /* Cinza muito claro */
+    --texto: #333333;         /* Cinza escuro */
+    --texto-sec: #666666;     /* Cinza médio */
+    --erro: #E57373;          /* Vermelho suave */
+    --sucesso: #81C784;       /* Verde claro */
+}
+
+body {
+    background: var(--fundo);
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--texto);
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primaria);
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--texto-sec);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid var(--secundaria);
+    font-size: 15px;
+}
+
+button, .botao {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: var(--primaria);
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .botao:hover {
+    background: #1f5eb1; /* Azul mais escuro */
+}
+
+.sucesso {
+    background: var(--sucesso);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.erro {
+    background: var(--erro);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.tabela th {
+    background: var(--primaria);
+    color: white;
+    padding: 10px;
+}
+
+.tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabela tr:hover {
+    background: #f1f1f1;
+}
+
+.msg {
+    color: var(--texto-sec);
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
